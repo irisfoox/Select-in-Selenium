@@ -24,7 +24,7 @@ public class Main {
 	    
 	    Select selector=new Select(driver.findElement(By.id("mainSearchSelectType")));
 	    selector.selectByIndex(2);
-	    selector.deselectByValue("pro");
+	    selector.selectByValue("pro");
 	    List<WebElement>langs=driver.findElements(By.cssSelector("span.lang-name"));
 	    langs.get(0).click();
 	    
